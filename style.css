@@ -11,7 +11,6 @@ body {
 h1,
 h2,
 h3 {
-  text-align: center;
   margin: 0;
 }
 
@@ -21,7 +20,6 @@ h1 {
 
 h2 {
   font-size: 48px;
-  margin-top: 30px;
 }
 
 h3 {
@@ -30,11 +28,8 @@ h3 {
 }
 
 p {
-  padding: 20px;
-  border-radius: 4px;
   font-size: 18px;
   line-height: 1.5;
-  text-align: center;
 }
 
 .navigation-links {
@@ -45,26 +40,35 @@ p {
 
 .navigation-links a {
   margin: 20px;
-  border-radius: 4px;
-  padding: 20px 15px;
-  text-decoration: none;
-  text-transform: capitalize;
 }
 
-.contact-link {
+.primary-link {
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
+  border-radius: 4px;
+  padding: 20px, 15px;
+  text-decoration: none;
   color: white;
 }
 
-.about-link {
+.secondary-link {
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
+    padding: 20px, 15px;
+  text-decoration: none; 
+  border-radius: 4px;
+  text-transform: capitalize;
 }
-
+.homepage-link {
+   background: var(--primary-color);
+  text-align: center;
+  display: block;
+}
 .about-paragraphs {
-  display: flex;
   margin: 30px 0;
+}
+.about-paragraphs p { 
+  margin: 10px;
 }
 .email-link {
   display: flex;
@@ -76,24 +80,4 @@ p {
 
 .email-link:hover {
   text-decoration: underline;
-}
-#aboutme {
-  margin-top: 30px;
-}
-.text {
-  text-align: left;
-}
-.left {
-  padding-left: 15px;
-  font-size: 40px;
-}
-.launch a {
-  background: var(--primary-color);
-  box-shadow: var(--box-shadow);
-  color: white;
-  border-radius: 4px;
-  padding: 20px 15px;
-  text-decoration: none;
-  text-transform: capitalize;
-  margin-left: 17px;
 }
